@@ -13,6 +13,7 @@ h1,h2,h3,h4, .h1, .h2, .h3, .h4{
     --yellow:rgb(255, 174, 3);
     --black:rgb(28, 28, 28);
     --white: rgb(238, 240, 242);
+    --blue:rgb(56, 134, 151);
 }
 
 .bg-yellow{
@@ -37,4 +38,27 @@ h1,h2,h3,h4, .h1, .h2, .h3, .h4{
 
 .text-white{
     color: var(--white);
+}
+
+
+/* Navbar */
+
+.nav-link{
+    color: var(--yellow);
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    color: var(--blue);
+}
+
+.navbar{
+height: 140px;
+transition: 0.5s;
+}
+
+/* Logo */
+.logo{
+
+    width: 50px;
 }
