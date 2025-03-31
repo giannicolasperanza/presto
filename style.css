@@ -1,0 +1,40 @@
+font-family: 'Montserrat', sans-serif;
+
+*{
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4, .h1, .h2, .h3, .h4{
+    font-family: montserrat;
+}
+
+
+:root{
+    --yellow:rgb(255, 174, 3);
+    --black:rgb(28, 28, 28);
+    --white: rgb(238, 240, 242);
+}
+
+.bg-yellow{
+    background-color: var(--yellow);
+}
+
+.bg-black{
+    background-color: var(--black);
+}
+
+.bg-white{
+    background-color: var(--white);
+}
+
+.text-yellow{
+    color: var(--yellow);
+}
+
+.text-black{
+    color: var(--black);
+}
+
+.text-white{
+    color: var(--white);
+}
