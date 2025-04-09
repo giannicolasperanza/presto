@@ -16,6 +16,11 @@ h1,h2,h3,h4, .h1, .h2, .h3, .h4{
     --blue:rgb(56, 134, 151);
 }
 
+body{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
 .bg-yellow{
     background-color: var(--yellow);
 }
@@ -54,11 +59,139 @@ h1,h2,h3,h4, .h1, .h2, .h3, .h4{
 
 .navbar{
 height: 140px;
-transition: 0.5s;
+transition: 0.9s;
 }
 
 /* Logo */
 .logo{
 
     width: 50px;
+}
+
+.logo2{
+    width: 60px;
+    transition: 0.9s;
+}
+
+
+/* Header */
+
+.header{
+    background-image: linear-gradient(rgba(28,28,28,0.7),  rgba(28,28,28,0.7) ), url(./media/vetrina-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.btn-custom{
+    color: var(--yellow);
+    background-color: var(--black);
+    border: 2px solid var(--yellow);
+    border-radius: 50px;
+    margin: 0px 15px;
+    padding: 20px 30px;
+    transition: 0.5s;
+    
+}
+
+.btn-custom:hover{
+    color: var(--black);
+    background-color: var(--yellow);
+    transform: scale(1.1);
+
+
+}
+
+/* Positioned */
+
+.positioned{
+    position: relative;
+    top:-150px;
+}
+
+.col-custom{
+    padding: 10px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--black);
+
+}
+
+.col-custom:hover{
+    transform: scale(1.1);
+    background-color: var(--black);
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+}
+
+@media screen and (max-width: 600px){
+    .positioned{
+        position: static;
+    }
+}
+
+/* Numeri Incrementali*/
+
+.number{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+/* Swiper */
+
+.swiper{
+    height:600px ;
+}
+
+.card-review{
+    height: 250px;
+    width: 500px;
+    border: solid 2px var(--yellow);
+    border-radius: 20px;
+}
+
+.swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+/* Pagina annunci */
+
+.accordion-item, .accordion-button{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: var(--white);
+    background-color: var(--black);
+    box-shadow: none;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+
+.card-custom{
+    /* height: 200px; */
+    width: 30%;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly ;
+    margin-bottom: 20px;
+}
+
+.img-card{
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
 }
