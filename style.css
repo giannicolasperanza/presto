@@ -195,3 +195,99 @@ transition: 0.9s;
     border-top-right-radius: 20px;
 
 }
+
+
+/* Chi siamo */
+
+.circle{
+   height: 300px;
+   width: 300px;
+   border-radius: 50%;
+   border: 3px solid var(--yellow); 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.opener{
+ height: 75px;
+ width: 75px;
+ border-radius: 50%;
+ border: 3px solid var(--white);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: absolute;
+ z-index: 3;
+ background-color: var(--black);
+ cursor: pointer;
+ transition: 0.5s;
+
+}
+
+.vh-75{
+    height: 75vh;
+}
+
+.moved{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 3px solid var(--white);  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    position: absolute; 
+    z-index: 2;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.flip-card{
+
+    height: 400px;
+    width: 250px;
+    
+
+}
+
+.flip-card:hover > .inner{
+    transform: rotateY(180deg);
+}
+
+
+.inner{
+    height: 100%;
+    width: 100%;    
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+    position: relative;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+
+    
+}
+
+.inner-face{
+    height: 400px;
+    width: 250px;
+    
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.inner-back{
+    height: 400px;
+    width: 250px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 15px;
+}
